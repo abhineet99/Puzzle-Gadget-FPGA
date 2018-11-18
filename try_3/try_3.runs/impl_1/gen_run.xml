@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1542519782">
+  <File Type="ROUTE-PWR-SUM" Name="seg7decimal_power_summary_routed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="seg7decimal_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-RPX" Name="seg7decimal_drc_routed.rpx"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="seg7decimal_routed_bb.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="seg7decimal_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-DCP" Name="seg7decimal_routed.dcp"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="seg7decimal_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-ERROR-DCP" Name="seg7decimal_routed_error.dcp"/>
+  <File Type="ROUTE-PWR" Name="seg7decimal_power_routed.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="seg7decimal_physopt.dcp"/>
+  <File Type="ROUTE-DRC-PB" Name="seg7decimal_drc_routed.pb"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="seg7decimal_postplace_pwropt.dcp"/>
+  <File Type="ROUTE-DRC" Name="seg7decimal_drc_routed.rpt"/>
+  <File Type="OPT-DRC" Name="seg7decimal_drc_opted.rpt"/>
+  <File Type="OPT-DCP" Name="seg7decimal_opt.dcp"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="seg7decimal_incremental_reuse_pre_placed.rpt"/>
+  <File Type="PLACE-CTRL" Name="seg7decimal_control_sets_placed.rpt"/>
+  <File Type="PA-TCL" Name="seg7decimal.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="seg7decimal_bus_skew_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="seg7decimal_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="seg7decimal_bus_skew_routed.rpx"/>
+  <File Type="OPT-HWDEF" Name="seg7decimal.hwdef"/>
+  <File Type="PLACE-UTIL-PB" Name="seg7decimal_utilization_placed.pb"/>
+  <File Type="BG-BIT" Name="seg7decimal.bit"/>
+  <File Type="ROUTE-STATUS-PB" Name="seg7decimal_route_status.pb"/>
+  <File Type="BG-BIN" Name="seg7decimal.bin"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="seg7decimal_timing_summary_routed.rpt"/>
+  <File Type="BITSTR-MSK" Name="seg7decimal.msk"/>
+  <File Type="ROUTE-TIMING-PB" Name="seg7decimal_timing_summary_routed.pb"/>
+  <File Type="BITSTR-RBT" Name="seg7decimal.rbt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="seg7decimal_timing_summary_routed.rpx"/>
+  <File Type="BITSTR-NKY" Name="seg7decimal.nky"/>
+  <File Type="BITSTR-BMM" Name="seg7decimal_bd.bmm"/>
+  <File Type="ROUTE-CLK" Name="seg7decimal_clock_utilization_routed.rpt"/>
+  <File Type="BG-DRC" Name="seg7decimal.drc"/>
+  <File Type="BITSTR-MMI" Name="seg7decimal.mmi"/>
+  <File Type="ROUTE-BUS-SKEW" Name="seg7decimal_bus_skew_routed.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="BG-BGN" Name="seg7decimal.bgn"/>
+  <File Type="BITSTR-SYSDEF" Name="seg7decimal.sysdef"/>
+  <File Type="PLACE-UTIL" Name="seg7decimal_utilization_placed.rpt"/>
+  <File Type="BITSTR-LTX" Name="seg7decimal.ltx"/>
+  <File Type="RDI-RDI" Name="seg7decimal.vdi"/>
+  <File Type="PLACE-IO" Name="seg7decimal_io_placed.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="seg7decimal_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="seg7decimal_postroute_physopt.dcp"/>
+  <File Type="ROUTE-STATUS" Name="seg7decimal_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="seg7decimal_power_routed.rpx"/>
+  <File Type="PLACE-DCP" Name="seg7decimal_placed.dcp"/>
+  <File Type="PWROPT-DCP" Name="seg7decimal_pwropt.dcp"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/main2.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="seg7decimal"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/myxdc.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2018"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>
