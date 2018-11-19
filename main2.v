@@ -57,7 +57,7 @@ row3=12'b000000000000;
 end
 
 always @(posedge clk)
-if(! (whichdone==9'b111011101 || whichdone==9'b111111110 || whichdone==9'b111111101 || whichdone==9'b111111011 || whichdone==9'b111110111 || whichdone==9'b111101111 || whichdone==9'b011111111 || whichdone==9'b101111101 || whichdone==9'b110111101))
+	if(! (whichdone==9'b111111101 || whichdone==9'b111111110 || whichdone==9'b111111101 || whichdone==9'b111111011 || whichdone==9'b111110111 || whichdone==9'b111101111 || whichdone==9'b011111111 || whichdone==9'b101111111 || whichdone==9'b110111111))
 begin
 if(btnl==1)
 begin
