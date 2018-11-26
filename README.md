@@ -7,7 +7,7 @@ https://github.com/Digilent/Basys3/tree/master/Resources/XDC
 
 You may view the game that I am talking about by checking out
 the following link: https://youtu.be/GI9cg2orYf4 . We may build a
-similar game of 3*3 matrix with entries from 0 to 8 and a blank space.
+similar game of 3*3 matrix with entries from 1 to 8 and a blank space.
 The numbers are randomly distributed in the matrix initially. The
 player may, at any time, view the current status of the game using
 three switches. The player may play by shifting the blank box by 1 unit
