@@ -35,7 +35,7 @@ wire [1:0] s;
 reg [3:0] j=0; 
 reg [8:0] whichdone;
 initial begin
-whichdone=9'b00000000;//which matrix slot already has a number
+whichdone=9'b000000000;//which matrix slot already has a number
 end
 reg [3:0] digit;
 reg [3:0] to_digit;
